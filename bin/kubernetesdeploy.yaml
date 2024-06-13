@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: bankapp-eta-deploy
+  name: banking-eta-deploy
   labels:
     app: bankapp-eta-app
 spec:
@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: bankapp-eta-container
-        image: loksaieta/bankapp-eta-app
+        image: shriram9191/banking-eta-app
         ports:
         - containerPort: 8082
 ---
